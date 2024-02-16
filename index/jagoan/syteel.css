@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* body {
+    margin-bottom: 20000px;
+} */
+
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    background: #d2c9c9;
+}
+
+.nav {
+    width: 100%;
+    position: fixed;
+    height: 90px;
+    background: black;
+    color: #fff;
+    display: grid;
+    /* padding-left: 50px; */
+    grid-template-columns: repeat(auto-fit,  minmax(300px, 1fr));
+    justify-items: center;
+    z-index: 9999;
+}
+
+.nav ul li a {
+    border-radius: 10px;
+}
+
+.nav li:hover a {
+    background: rgb(174, 147, 147);
+}
+
+
+
+.nav1 {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    /* background: red; */
+}
+
+.nav ul {
+    width: 100%;
+    /* background: darkgoldenrod; */
+    display: flex;
+    margin: auto;
+    list-style: none;
+}
+
+.navsatu {
+    width: 300px;
+    /* background: black; */
+    opacity: 1;
+    color: black;
+    position: absolute;
+    margin-top: -110px;
+    transition: 1s;
+    z-index: -99;
+    filter: blur(10px);
+}
+
+
+
+
+
+
+.nav ul li:nth-child(1):hover .navsatu{
+    background: black;
+    filter: blur(0);
+    opacity: 1;
+    color: #fff;
+    margin-top: 55px;
+} 
+
+
+
+.nav ul li a{
+    text-align: center;
+    padding: 1.3em;
+    color: #fff;
+    /* background: saddlebrown; */
+}
+
+
+.nav2 {
+    width: 100%;
+    /* background: darkcyan; */
+    margin: auto;
+    text-align: center;
+    /* padding-left: 20px; */
+}
+
+.nav2 a {
+    margin-left: 10px;
+    padding: 1.3em;
+    color: #fff;
+    /* background: darkgoldenrod; */
+}
+
+
+
+.nav2 a:nth-child(2) {
+    color: black;
+    border-radius: 10px;
+    background: rgb(174, 147, 147);
+}
+
+.nav2 a:nth-child(2):hover {
+    background: rgb(255, 255, 255);
+    color: black;
+}
+/* nav selesai */
+
+
+/* provile */
+
+header {
+    margin-top: 90px;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/foto/laptop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    width: 100%;
+    margin-top: 200px;
+    color: #fff;
+}
+
+.header1 h1 {
+    margin-left: 50px;
+    font-size: 80px;
+    grid-column: 1 / -1;
+    color: #fff;
+}
+
+.header1 a {
+    margin-left: 50px;
+    margin-right: 20px;
+    text-align: center;
+    padding: 1.3em;
+    background: white;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.header1 a:hover {
+    color: #fff;
+    background: #6f6a6a;
+}
+
+.header1 p {
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+/* provile selesai */
+
+/* from */
+
+form {
+    display: grid;
+    width: 100%;
+    color: #000;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 50px;
+}
+
+form h1 {
+    width: 380px;
+}
+
+.input-box {
+    margin: auto;
+    text-align: center;
+    /* background: #6f6a6a; */
+}
+
+.input-box  .bi-search {
+    position: relative;
+    color: #ff0000;
+    left: 400px;
+}
+
+.input-box input {
+    width: 400px;
+    height: 50px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.button1 {
+    background: #000;
+    height: 52px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.button1:hover {
+    animation: geser 2s ease-out;
+    /* transform: translateX(50px); */
+}
+
+@keyframes geser {
+    50% {
+        transform: translateX(30px);
+        color: #fff;
+        background: #fff;
+    }
+    100% {
+        transform: translateY(-30px);
+        background: #000;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .input-box h1 {
+        width: 300px;
+    }
+    
+    .input-box input {
+        background: #6f6a6a;
+        width: 300px;
+    }
+
+    .input-box  .bi-search {
+        left:300px;
+        color: black;
+    }
+
+    .button1 {
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 992px){
+   form {
+    padding: 20px;
+   }
+   
+    .input-box input {
+        width: 250px;
+        background: red;
+    }
+
+    form h1 {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        padding: 10px;
+    }
+    
+    form h1 {
+        width: 350px;
+    }
+
+    .input-box input {
+        background: #d2c9c9;
+    }
+
+}
+
+    
+
+
+
+
+
+
+
+
+
+/* https://www.squarespace.com/?clickid=3UM2bnQjyxyPTmMyFW0goTZdUkHwCfQHYSWmVE0&irgwc=1&utm_medium=pp&utm_source=mybestwebsitebuilder&utm_campaign=mybestwebsitebuilder&channel=pp&subchannel=1879673&source=mybestwebsitebuilder */
+
+
+
+
+
+
+
+
+.hiro {
+    display: grid;
+    grid-gap: 2em;
+    align-items: center;
+
+}
+
+picture img {
+    min-width: 100%;
+    height: auto;
+}
+
+@media  (min-width: 960px){
+    .hero {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+figure audio {
+    width: 300px;
+    height: 400px;
+    background: #000
+}
